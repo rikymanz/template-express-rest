@@ -1,0 +1,29 @@
+get http://localhost:3000/customers
+
+###
+
+GET http://localhost:3000/customers/5f1da15682e20f36e4ceabd8
+
+###
+
+DELETE http://localhost:3000/customers/5f1d9e1518df4010586d053f
+
+###
+
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+  "firstName": "Riccardo",
+  "lastName": "Manzato",
+  "bornDate":"1992-08-26"
+}
+
+###
+
+PATCH http://localhost:3000/customers/5f1da15682e20f36e4ceabd8
+Content-Type: application/json 
+
+{
+  "firstName": "Tommy"
+}
