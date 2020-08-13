@@ -1,0 +1,29 @@
+get http://localhost:3000/coin
+
+###
+
+GET http://localhost:3000/coin/5f355471e6c9eb28c8a25cb8
+
+###
+
+DELETE http://localhost:3000/coin/_id
+
+###
+
+POST http://localhost:3000/coin
+Content-Type: application/json
+
+{
+  "owner": "5f354edaba3f8ffff286ffa6",
+  "coin": "MCO",
+  "quantity":150
+}
+
+###
+
+PATCH http://localhost:3000/coin/5f355471e6c9eb28c8a25cb8
+Content-Type: application/json 
+
+{
+  "quantity": "0.5"
+}

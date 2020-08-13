@@ -1,0 +1,27 @@
+get http://localhost:3000/user
+
+###
+
+GET http://localhost:3000/user/5f354edaba3f8ffff286ffa6
+
+###
+
+DELETE http://localhost:3000/user/_id
+
+###
+
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "name": "Susanna"
+}
+
+###
+
+PATCH http://localhost:3000/user/5f354edaba3f8ffff286ffa6
+Content-Type: application/json 
+
+{
+  "name": "Riccardo"
+}

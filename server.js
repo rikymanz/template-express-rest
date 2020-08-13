@@ -11,7 +11,11 @@ db.once('open', () => console.log('connected to database'))
 
 app.use(express.json())
 
-const customersRouter = require('./routes/customers')
-app.use('/customers', customersRouter)
+const coinRouter = require('./routes/coinRoutes')
+app.use('/coin', coinRouter)
+
+const userRouter = require('./routes/userRoutes')
+app.use('/user', userRouter)
+
 // risposta del server http://localhost:3000
 app.listen(3000, () => console.log('server started'))
